@@ -1,9 +1,9 @@
 N = int(input('Vvedite N '))
 l = []
-for _ in range(N):
-    l.append(int(input()))
-    n1 = l[0]
-    for n2 in l[1:]:
-        if n2 > n1:
-            n1 = n2
-print(n1)
+l.append(int(input()))
+n = l[0]
+for i in range(N-1):
+    i = int(input())
+    if i > n:
+        n = i
+print(n)
